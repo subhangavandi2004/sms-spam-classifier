@@ -1,0 +1,28 @@
+{
+  "n_messages": 5572,
+  "spam_share_pct": 13.4,
+  "always_predict_ham_accuracy_pct": 86.6,
+  "naive_bayes": {
+    "cv_f1_spam": 0.9504,
+    "test_f1_spam": 0.9433,
+    "test_precision": 1.0,
+    "test_recall": 0.8926
+  },
+  "logistic_regression": {
+    "cv_f1_spam": 0.9511,
+    "test_f1_spam": 0.9521,
+    "test_precision": 0.972,
+    "test_recall": 0.9329
+  },
+  "linear_svm": {
+    "cv_f1_spam": 0.9506,
+    "test_f1_spam": 0.9589,
+    "test_precision": 0.979,
+    "test_recall": 0.9396
+  },
+  "best_model_by_cv_f1": "logistic_regression",
+  "errors": {
+    "missed spam": 10,
+    "false alarm": 4
+  }
+}
